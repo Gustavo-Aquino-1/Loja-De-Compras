@@ -15,7 +15,7 @@ export const Content = () => {
       <Route exact path='/profile' component={ Profile } />
       <Route exact path='/cart' component={ Cart } />
       <Route exact path='/store' component={ Store } />
-      <Route exact path='/' component={ Login } />
+      <Route exact path='/Loja-De-Compras' component={ Login } />
     </Switch>
   )
 }
