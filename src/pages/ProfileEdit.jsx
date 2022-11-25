@@ -4,12 +4,12 @@ import { FormContainer } from '../css/styleProfileEdit';
 
 export const ProfileEdit = (props) => {
   const user = getItem('usuario')
-  const [ name, setName ] = useState( user.name ||'');
-  const [ email, setEmail ] = useState( user.email || '');
-  const [ pass, setPass ] = useState(user.pass ||'');
-  const [ img, setImg ] = useState(user.img|| '');
-  const [ cpf, setCpf ] = useState(user.cpf||'');
-  const [ saldo, setSaldo ] = useState(user.saldo ||'');
+  const [ name, setName ] = useState( user?.name ||'');
+  const [ email, setEmail ] = useState( user?.email || '');
+  const [ pass, setPass ] = useState(user?.pass ||'');
+  const [ img, setImg ] = useState(user?.img|| '');
+  const [ cpf, setCpf ] = useState(user?.cpf||'');
+  const [ saldo, setSaldo ] = useState(user?.saldo ||'');
 
   const regexpEmail = /\S+[@]\w+[.]\w{3}/gi;
   const regexpEmail2 = /\S+[@]\w+[.]\w{3}[.]\w+/gi;
